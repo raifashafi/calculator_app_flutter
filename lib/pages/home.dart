@@ -1,3 +1,4 @@
+import 'package:calculator_app/pages/add.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,8 @@ class Homepage extends StatelessWidget {
                   backgroundColor: Colors.deepPurpleAccent,
                 ),
                 onPressed: () {
-
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => AddPage()));
                 },
                 child: Text(
                   "ADD",
@@ -105,4 +107,4 @@ class Homepage extends StatelessWidget {
       ),
     );
   }
-
+}

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 void main()
 {
-  runApp();
+  runApp(Calculator());
 }
 
 
@@ -14,7 +14,8 @@ class Calculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,  // Add this line to remove the debug banner
+      debugShowCheckedModeBanner: false,
+      // Add this line to remove the debug banner
       home: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -28,3 +29,4 @@ class Calculator extends StatelessWidget {
       ),
     );
   }
+}
